@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Untitled Document</title>
+    <link href="Music.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header_text">
+        <span class="title h1"> Computer Generated Music </span>
+        <span class="author h1"> - &MediumSpace; Casper Larkin </span>
+      </div>
+      <button class="information header_info">
+        <div class="letter_i2">i</div>
+        <div class="info_popup_hover"></div>
+      </button>
+
+      <div class="info_popup">
+        <div class="popup_text">Hello World! This is my Info Tab</div>
+      </div>
+
+      <button class="instructions header_info">
+        <div class="book">
+          <div class="book_left page">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line2"></div>
+            <div class="line1"></div>
+          </div>
+          <div class="book_right page">
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="line4"></div>
+            <div class="line3"></div>
+          </div>
+          <div class="letter_i_back"></div>
+          <div class="letter_i">i</div>
+        </div>
+        <div class="instruction_popup_hover"></div>
+      </button>
+
+      <div class="instruction_popup">
+        <div class="popup_text">Hello World! This is my Instructions Tab</div>
+      </div>
+    </div>
+    <!-- Generation -->
+    <div class="genBtn">
+      <p class="genText">Generate <br />Chord Pattern</p>
+    </div>
+
+    <div class="genOut">
+      <p class="genOut1">XXXX</p>
+      <p class="genOut2">XXXX</p>
+      <p class="genOut3">XXXX</p>
+      <p class="genOut4">XXXX</p>
+    </div>
+
+    <!--Settings-->
+    <div class="settingsBox">
+      <p class="settingText">Settings</p>
+      <div class="settings">
+        <p>Toggle Octave</p>
+        <div class="Tog">
+          <div class="btnOctave">
+            <p class="tog_on">On</p>
+          </div>
+          <div class="btnKeyBind">
+            <p class="tog_off">Off</p>
+          </div>
+        </div>
+
+        <p>Sustain Pedal</p>
+        <div class="Tog">
+          <div class="btn_sus">
+            <p class="tog_on_2">On</p>
+          </div>
+          <div class="btn_nosus">
+            <p class="tog_off_2">Off</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Key Pad-->
+    <div class="keyPadcon">
+      <img class="keyPad" src="Media/Key pad image-01.png" />
+    </div>
+    <!--Piano -->
+
+    <div class="piano">
+      <div class="key_container">
+        <!-- Octave 1 -->
+
+        <div class="key_A1 w_key key">
+          <audio class="note A1" src="Media/Octave 1-2/Piano.ff.A1.mp3"></audio>
+        </div>
+
+        <div class="binding_b">A</div>
+        <div class="b_key_con">
+          <div class="key_Bb1 b_key key">
+            <audio class="note Bb1 _65 65" src="Media/Octave 1-2/Piano.ff.Bb1.mp3"></audio>
+          </div>
+        </div>
+        <div class="binding">Z</div>
+        <div class="key_B1 w_key key">
+          <audio class="note B1 _90 90" src="Media/Octave 1-2/Piano.ff.B1.mp3"></audio>
+        </div>
+
+        <!-- Octave 2 -->
+        <div class="binding">X</div>
+        <div class="octave">C2</div>
+
+        <div class="key_C2 w_key key">
+          <audio class="note C2 _88 88" src="Media/Octave 1-2/Piano.ff.C2.mp3"></audio>
+        </div>
+
+        <div class="binding_b">D</div>
+        <div class="b_key_con">
+          <div class="key_Db2 b_key key">
+            <audio class="note Db2 _68 68" src="Media/Octave 1-2/Piano.ff.Db2.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">C</div>
+        <div class="key_D2 w_key key">
+          <audio class="note D2 _67 67" src="Media/Octave 1-2/Piano.ff.D2.mp3"></audio>
+        </div>
+
+        <div class="binding_b">F</div>
+        <div class="b_key_con">
+          <div class="key_Eb2 b_key key">
+            <audio class="note Eb2 _70 70" src="Media/Octave 1-2/Piano.ff.Eb2.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">V</div>
+        <div class="key_E2 w_key key">
+          <audio class="note E2 _86 86" src="Media/Octave 1-2/Piano.ff.E2.mp3"></audio>
+        </div>
+
+        <div class="binding">B</div>
+        <div class="key_F2 w_key key">
+          <audio class="note F2 _66 66" src="Media/Octave 1-2/Piano.ff.F2.mp3"></audio>
+        </div>
+
+        <div class="binding_b">H</div>
+        <div class="b_key_con">
+          <div class="key_Gb2 b_key key">
+            <audio class="note Gb2 _72 72" src="Media/Octave 1-2/Piano.ff.Gb2.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">N</div>
+        <div class="key_G2 w_key key">
+          <audio class="note G2 _78 78" src="Media/Octave 1-2/Piano.ff.G2.mp3"></audio>
+        </div>
+
+        <div class="binding_b">J</div>
+        <div class="b_key_con">
+          <div class="key_Ab2 b_key key">
+            <audio class="note Ab2 _74 74" src="Media/Octave 1-2/Piano.ff.Ab2.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">M</div>
+        <div class="key_A2 w_key key">
+          <audio class="note A2 _77 77" src="Media/Octave 1-2/Piano.ff.A2.mp3"></audio>
+        </div>
+
+        <div class="binding_b">K</div>
+        <div class="b_key_con">
+          <div class="key_Bb2 b_key key">
+            <audio class="note Bb2 _75 75" src="Media/Octave 1-2/Piano.ff.Bb2.mp3"></audio>
+          </div>
+        </div>
+        <div class="binding"><</div>
+        <div class="key_B2 w_key key">
+          <audio class="note B2 _188 188" src="Media/Octave 1-2/Piano.ff.B2.mp3"></audio>
+        </div>
+
+        <!-- Octave 3 -->
+        <div class="octave">C3</div>
+        <div class="binding">></div>
+        <div class="key_C3 w_key key">
+          <audio class="note C3 _190 190" src="Media/Octave 3/Piano.ff.C3.mp3"></audio>
+        </div>
+
+        <div class="binding_b">:</div>
+        <div class="b_key_con">
+          <div class="key_Db3 b_key key">
+            <audio class="note Db3 _186 186" src="Media/Octave 3/Piano.ff.Db3.mp3"></audio>
+          </div>
+        </div>
+        <div class="binding">/</div>
+        <div class="key_D3 w_key key">
+          <audio class="note D3 _191 191" src="Media/Octave 3/Piano.ff.D3.mp3"></audio>
+        </div>
+
+        <div class="binding_b">"</div>
+        <div class="b_key_con">
+          <div class="key_Eb3 b_key key">
+            <audio class="note Eb3 _222 222" src="Media/Octave 3/Piano.ff.Eb3.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">Q</div>
+        <div class="key_E3 w_key key">
+          <audio class="note E3 _81 81" src="Media/Octave 3/Piano.ff.E3.mp3"></audio>
+        </div>
+
+        <div class="binding">W</div>
+        <div class="key_F3 w_key key">
+          <audio class="note F3 _87 87" src="Media/Octave 3/Piano.ff.F3.mp3"></audio>
+        </div>
+
+        <div class="binding_b">3</div>
+        <div class="b_key_con">
+          <div class="key_Gb3 b_key key">
+            <audio class="note Gb3 _51 51" src="Media/Octave 3/Piano.ff.Gb3.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">E</div>
+        <div class="key_G3 w_key key">
+          <audio class="note G3 _69 69" src="Media/Octave 3/Piano.ff.G3.mp3"></audio>
+        </div>
+
+        <div class="binding_b">4</div>
+        <div class="b_key_con">
+          <div class="key_Ab3 b_key key">
+            <audio class="note Ab3 _52 52" src="Media/Octave 3/Piano.ff.Ab3.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">R</div>
+        <div class="key_A3 w_key key">
+          <audio class="note A3 _82 82" src="Media/Octave 3/Piano.ff.A3.mp3"></audio>
+        </div>
+
+        <div class="binding_b">5</div>
+        <div class="b_key_con">
+          <div class="key_Bb3 b_key key">
+            <audio class="note Bb3 _53 53" src="Media/Octave 3/Piano.ff.Bb3.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">T</div>
+        <div class="key_B3 w_key key">
+          <audio class="note B3 _84 84" src="Media/Octave 3/Piano.ff.B3.mp3"></audio>
+        </div>
+
+        <!-- Octave 4 -->
+        <div class="octave">C4</div>
+        <div class="binding">Y</div>
+        <div class="key_C4 w_key key">
+          <audio class="note C4 _89 89" src="Media/Octave 4/Piano.ff.C4.mp3"></audio>
+        </div>
+
+        <div class="binding_b">7</div>
+        <div class="b_key_con">
+          <div class="key_Db4 b_key key">
+            <audio class="note Db4 _55 55" src="Media/Octave 4/Piano.ff.Db4.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">U</div>
+        <div class="key_D4 w_key key">
+          <audio class="note D4 _85 85" src="Media/Octave 4/Piano.ff.D4.mp3"></audio>
+        </div>
+
+        <div class="binding_b">8</div>
+        <div class="b_key_con">
+          <div class="key_Eb4 b_key key">
+            <audio class="note Eb4 _56 56" src="Media/Octave 4/Piano.ff.Eb4.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">I</div>
+        <div class="key_E4 w_key key">
+          <audio class="note E4 _73 73" src="Media/Octave 4/Piano.ff.E4.mp3"></audio>
+        </div>
+
+        <div class="binding">O</div>
+        <div class="key_F4 w_key key">
+          <audio class="note F4 _79 79" src="Media/Octave 4/Piano.ff.F4.mp3"></audio>
+        </div>
+
+        <div class="binding_b">0</div>
+        <div class="b_key_con">
+          <div class="key_Gb4 b_key key">
+            <audio class="note Gb4 _48 48" src="Media/Octave 4/Piano.ff.Gb4.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">P</div>
+        <div class="key_G4 w_key key">
+          <audio class="note G4 _80 80" src="Media/Octave 4/Piano.ff.G4.mp3"></audio>
+        </div>
+
+        <div class="binding_b">-</div>
+        <div class="b_key_con">
+          <div class="key_Ab4 b_key key">
+            <audio class="note Ab4 _189 189" src="Media/Octave 4/Piano.ff.Ab4.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">[</div>
+        <div class="key_A4 w_key key">
+          <audio class="note A4 _219 219" src="Media/Octave 4/Piano.ff.A4.mp3"></audio>
+        </div>
+
+        <div class="binding_b">+</div>
+        <div class="b_key_con">
+          <div class="key_Bb4 b_key key">
+            <audio class="note Bb4 _187 187" src="Media/Octave 4/Piano.ff.Bb4.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="binding">]</div>
+        <div class="key_B4 w_key key">
+          <audio class="note B4 _221 221" src="Media/Octave 4/Piano.ff.B4.mp3"></audio>
+        </div>
+
+        <!-- Octave 5 -->
+        <div class="octave">C5</div>
+        <div class="binding">\</div>
+        <div class="key_C5 w_key key">
+          <audio class="note C5 _220 220" src="Media/Octave 5-6/Piano.ff.C5.mp3"></audio>
+        </div>
+
+        <div class="b_key_con">
+          <div class="key_Db5 b_key key">
+            <audio class="note Db5 s_16 s16" src="Media/Octave 5-6/Piano.ff.Db5.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="key_D5 w_key key">
+          <audio class="note D5 s_85 s85" src="Media/Octave 5-6/Piano.ff.D5.mp3"></audio>
+        </div>
+
+        <div class="b_key_con">
+          <div class="key_Eb5 b_key key">
+            <audio class="note Eb5 s_56 s56" src="Media/Octave 5-6/Piano.ff.Eb5.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="key_E5 w_key key">
+          <audio class="note E5 s_73 s73" src="Media/Octave 5-6/Piano.ff.E5.mp3"></audio>
+        </div>
+
+        <div class="key_F5 w_key key">
+          <audio class="note F5 s_79 s79" src="Media/Octave 5-6/Piano.ff.F5.mp3"></audio>
+        </div>
+
+        <div class="b_key_con">
+          <div class="key_Gb5 b_key key">
+            <audio class="note Gb4 s_48 s48" src="Media/Octave 5-6/Piano.ff.Gb5.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="key_G5 w_key key">
+          <audio class="note G5 s_80 s80" src="Media/Octave 5-6/Piano.ff.G5.mp3"></audio>
+        </div>
+
+        <div class="b_key_con">
+          <div class="key_Ab5 b_key key">
+            <audio class="note Ab5 s_189 s189" src="Media/Octave 5-6/Piano.ff.Ab5.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="key_A5 w_key key">
+          <audio class="note A5 s_219 s219" src="Media/Octave 5-6/Piano.ff.A5.mp3"></audio>
+        </div>
+
+        <div class="b_key_con">
+          <div class="key_Bb5 b_key key">
+            <audio class="note Bb5 s_187 s187" src="Media/Octave 5-6/Piano.ff.Bb5.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="key_B5 w_key key">
+          <audio class="note B5 s_221 s221" src="Media/Octave 5-6/Piano.ff.B5.mp3"></audio>
+        </div>
+
+        <div class="octave">C6</div>
+
+        <div class="key_C6 w_key key">
+          <audio class="note C6 s_220 s220" src="Media/Octave 5-6/Piano.ff.C6.mp3"></audio>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

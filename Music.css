@@ -1,0 +1,544 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+  background: #189aac;
+  margin: 0vw;
+}
+
+/* HEADER ----------------------------  */
+
+.header {
+  width: 100%;
+  background: #000000;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 20px;
+  float: left;
+  margin-top: 9px;
+}
+
+.author {
+  font-weight: 600;
+}
+
+/* Buttons ----------------------------  */
+
+.header_info {
+  width: 2.6vw;
+  height: 2.6vw;
+  background-color: rgb(48, 48, 48);
+  border-radius: 50%;
+  float: right;
+  margin-right: 1vw;
+  margin-top: 0.45vw;
+  top: 0;
+  border: none;
+  transition-duration: 1s;
+}
+
+.popup_text {
+  color: #ffffff;
+  font-family: "Montserrat";
+  margin: 0.6vw;
+  font-size: 1.3vw;
+}
+
+/* Instructions Button ----------------------------  */
+
+.instruction_popup {
+  position: absolute;
+  top: 3.5vw;
+  right: 1vw;
+  height: 20vw;
+  width: 40vw;
+  background: rgb(48, 48, 48);
+  opacity: 0%;
+  z-index: -1;
+  transition-duration: 0.5s;
+  border-radius: 0 0 3vw 3vw;
+}
+
+.instruction_popup_hover {
+  position: absolute;
+  top: 3.5vw;
+  right: 1vw;
+  height: 20vw;
+  width: 40vw;
+  z-index: 0;
+  display: none;
+  border-radius: 0 0 3vw 3vw;
+}
+
+.book {
+  display: inline-flex;
+  margin-left: 0.01vw;
+  margin-top: 0.2vw;
+  transition-duration: 0s;
+}
+
+.page {
+  position: relative;
+  border: solid 0.11vw #ffffff;
+  width: 0.55vw;
+  height: 1vw;
+  margin-left: 0vw;
+  transition-duration: 0.5s;
+}
+
+.book_left {
+  border-radius: 0.1vw 0 0 0.1vw;
+}
+
+.book_right {
+  border-radius: 0 0.1vw 0.1vw 0;
+  margin-left: 0vw;
+}
+
+.line1 {
+  position: relative;
+  background-color: #ffffff;
+  width: 0.5vw;
+  height: 0.005vw;
+  margin-left: 0.025vw;
+  margin-top: 0.15vw;
+  transition-duration: 0.5s;
+}
+
+.line2 {
+  position: relative;
+  background-color: #ffffff;
+  width: 0.5vw;
+  height: 0.005vw;
+  margin-left: 0.025vw;
+  margin-top: 0.2vw;
+  transition-duration: 0.5s;
+}
+
+.line3 {
+  position: relative;
+  background-color: #ffffff;
+  width: 0.45vw;
+  height: 0.005vw;
+  margin-left: 0.04vw;
+  margin-top: 0.15vw;
+  transition-duration: 0.5s;
+}
+
+.line4 {
+  position: relative;
+  background-color: #ffffff;
+  width: 0.45vw;
+  height: 0.005vw;
+  margin-left: 0.04vw;
+  margin-top: 0.2vw;
+  transition-duration: 0.5s;
+}
+
+.letter_i {
+  position: absolute;
+  right: 4.95vw;
+  top: 2vw;
+  color: #ffffff;
+  padding-top: 0vw;
+  margin: 0;
+  font-family: "Roboto Mono";
+  border-radius: 50%;
+  font-size: 0.5vw;
+  width: 0.5vw;
+  height: 0.5vw;
+  transition-duration: 0.5s;
+}
+
+.letter_i_back {
+  background: rgb(48, 48, 48);
+  position: absolute;
+  right: 4.95vw;
+  top: 2.05vw;
+  width: 0.5vw;
+  height: 0.5vw;
+  border-radius: 50%;
+}
+
+.instructions:hover .page {
+  border: solid 0.11vw #189aac;
+}
+
+.instructions:hover .line1 {
+  background-color: #189aac;
+}
+
+.instructions:hover .line2 {
+  background-color: #189aac;
+}
+
+.instructions:hover .line3 {
+  background-color: #189aac;
+}
+
+.instructions:hover .line4 {
+  background-color: #189aac;
+}
+
+.instructions:hover .letter_i {
+  right: 4.9vw;
+  top: 1.8vw;
+  color: #189aac;
+  font-size: 1vw;
+}
+
+.instructions:hover {
+  border-radius: 0.5vw 0.5vw 0 0;
+  height: 3.1vw;
+  padding-bottom: 0.51vw;
+}
+
+.instructions:hover .instruction_popup_hover {
+  display: block;
+}
+
+.instructions:hover ~ .instruction_popup {
+  opacity: 100%;
+}
+
+/* Information Button ----------------------------  */
+
+.info_popup {
+  position: absolute;
+  top: 3.5vw;
+  right: 1vw;
+  height: 20vw;
+  width: 40vw;
+  background: rgb(48, 48, 48);
+  opacity: 0%;
+  z-index: -1;
+  transition-duration: 0.5s;
+  border-radius: 0 0 3vw 3vw;
+}
+
+.info_popup_hover {
+  position: absolute;
+  top: 3.5vw;
+  right: 1vw;
+  height: 20vw;
+  width: 40vw;
+  z-index: 0;
+  display: none;
+  border-radius: 0 0 3vw 3vw;
+}
+
+.letter_i2 {
+  font-size: 2vw;
+  top: 0.4vw;
+  right: 2.45vw;
+  background: none;
+  position: absolute;
+  color: #ffffff;
+  padding-top: 0vw;
+  margin: 0;
+  font-family: "Roboto Mono";
+  border-radius: 50%;
+  width: 0.5vw;
+  height: 0.5vw;
+  transition-duration: 0.5s;
+}
+
+.information:hover .letter_i2 {
+  color: #189aac;
+}
+
+.information:hover {
+  border-radius: 0.5vw 0.5vw 0 0;
+  height: 3.1vw;
+  padding-bottom: 0.51vw;
+}
+
+.information:hover .info_popup_hover {
+  display: block;
+}
+
+.information:hover ~ .info_popup {
+  opacity: 100%;
+}
+
+/* ------------- Geneeration ---------------- */
+
+.genBtn {
+  width: 25vw;
+  height: 10vw;
+  background: rgb(238, 152, 40);
+  margin-top: 5vw;
+  margin-left: 20px;
+  border-radius: 1vw;
+  transition-duration: 0.1s;
+}
+
+.genText {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 2.8vw;
+  text-align: center;
+  padding-top: 1vw;
+  line-height: 3.6vw;
+  user-select: none;
+  transition-duration: 0.1s;
+}
+
+.genBtn:hover {
+  background: rgb(206, 131, 33);
+}
+.genBtn:active {
+  background: rgb(145, 92, 22);
+}
+
+.genBtn:active .genText {
+  font-size: 2.5vw;
+  line-height: 3vw;
+  padding-top: 1.8vw;
+}
+
+.genOut {
+  width: 10vw;
+  height: 14vw;
+  margin-top: 2vw;
+  margin-left: 20px;
+  border-radius: 1vw;
+  border: solid 0.5vw #000000;
+  transition-duration: 0.1s;
+}
+
+.genOut > p {
+  font-family: "Montserrat";
+  font-size: 1.5vw;
+  line-height: 1.2vw;
+  text-align:center;
+}
+
+/*------Settings--------*/
+
+.settingsBox {
+  position:absolute;
+  left:28.5vw;
+  top: 5vw;
+  border:solid 0.7vw #ffffff;
+  border-radius: 2vw;
+  width:45vw;
+  height: 25.5vw;
+  line-height: 0;
+  font-family: "Montserrat";
+  
+}
+
+.settingText{
+  font-weight:600;
+  font-size: 2vw;
+  margin: 1vw;
+  margin-top: 1.5vw
+
+}
+
+.settings{
+  margin: 1.5vw;
+  margin-top: 2vw
+}
+
+.Tog{
+  display: inline-flex;
+}
+
+.Tog div p{
+  margin-left: 0.8vw;
+  margin-top: 0.8vw;
+  user-select: none;
+  font-size: 0.8vw;
+}
+
+.tog_on, .tog_on_2 {
+  visibility: hidden;
+}
+
+
+
+.btnOctave, .btn_sus {
+  width: 3vw;
+  height: 1.6vw;
+  background-color: #dbdbdb;
+  border-radius:0.5vw;
+  border: solid 0.2vw rgb(0, 0, 0);
+  transition-duration: 0.3s;
+  margin-right: 1vw
+}
+
+.btnKeyBind, .btn_nosus {
+  width: 3vw;
+  height: 1.6vw;
+  background-color: #138bbb;
+  border-radius:0.5vw;
+  border: solid 0.2vw rgb(0, 0, 0);
+  transition-duration: 0.5s;
+}
+
+
+/* ------- KeyPad ------- */
+
+
+.keyPadcon{
+  position:absolute;
+  right:2.5vw;
+  top: 5vw;
+  background: rgb(238, 152, 40);
+  width:20vw;
+  height: 27vw;
+  border-radius: 2vw
+}
+
+.keyPad {
+  width: 20vw;
+}
+
+
+
+
+/* PIANO ----------------------------  */
+
+.piano  {
+  width: 96vw;
+  height: 17.5vw;
+  background: rgb(0, 0, 0);
+  bottom: 1.8vw;
+  position: absolute;
+  margin-left: 20px;
+  border-radius: 0.5vw;
+  user-select: none;
+  border-bottom: solid 0vw;
+}
+
+.key_container {
+  overflow: auto;
+  white-space: nowrap;
+  width: 94.5vw;
+  margin-left: 0.75vw;
+  padding-bottom: 0.5vw;
+  font-size: 0;
+}
+
+.w_key {
+  background: #ffffff;
+  width: 4.5vw;
+  height: 16.5vw;
+  padding: 0;
+  margin-top: 0.5vw;
+  display: inline-block;
+  z-index: 1;
+  border-left: solid 0.2vw;
+}
+
+.b_key_con {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.5vw;
+  width: 0vw;
+  
+  /* margin-right: -0.0vw; */
+}
+
+.b_key {
+  margin-left: -1.4vw;
+  width: 3vw;
+  height: 9.5vw;
+  background: #000000;
+  position: relative;
+  margin-top: 0vw;
+  border-radius: 0 0 1vw 1vw;
+}
+.key {
+  transition-duration: 0.15s;
+}
+
+.octave, .binding{
+  display: inline-block;
+  vertical-align: 1vw;
+  width: 0vw;
+  margin-right: 0vw;
+  z-index: 5;
+  color: #000000;
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 400;
+  
+}
+
+.octave{
+  visibility:hidden;
+  left: 1.5vw;
+  font-size: 1.5vw;
+}
+
+.binding {
+  left: 1.8vw;
+  font-size: 1.3vw;
+}
+
+.binding_b{
+  display: inline-block;
+  vertical-align: 8vw;
+  left: -0.3vw;
+  width: 0vw;
+  margin-right: 0vw;
+  z-index: 5;
+  color: #ffffff;
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.2vw;
+}
+
+
+
+.w_key:hover {
+  background: #c7c7c7;
+}
+
+.b_key:hover {
+  background: #242424;
+}
+
+.w_key:active {
+  background: #2772a3;
+}
+
+.b_key:active {
+  background: #236591;
+}
+
+/*.b_note:hover .w_note {
+    background: #ffffff;
+}*/
+
+::-webkit-scrollbar {
+  height: 1vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #189aac;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(32, 32, 32);
+  border-radius: 2vw;
+  border: solid 0.28vw #189aac;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(83, 83, 83);
+}
